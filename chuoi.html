@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <script>
+        //ham kiem tra 1 chuoi co chua toan bo la so
+        function checkNumber(s){
+            //split
+            // s="10 20 30" -> split(" ")-> as=["10","20","30"]
+            var as=s.trim().split(" ");
+            var check=true;
+            for(var i=0;i<=n;i++){
+                if(Number(as[i]).toString()=="NaN"){
+                    check=false;
+                }
+            }
+            return check;
+        }
+        function s1(s){
+            //split
+            // s="10 20 30" -> split(" ")-> as=["10","20","30"]
+            var as=s.trim().split(" ");
+            var check=true;
+            for(var i=0;i<=n;i++){
+                if(Number(as[i]).toString()=="NaN"){
+                    check=false;
+                }
+            }
+            return check;
+        }
+        function setFocus(){
+            document.getElementById("hsn").focus();
+            frm.n.value="";
+            frm.kq.value="";
+            
+        }
+    </script>
+    
+</head>
+<body onload="setFocus()">
+    <form name="frm" >
+        <table>
+            <tr><td>uoc chung lon nhat cua k va n</td></tr>
+            <tr>
+                <td>nhap n</td>
+                <td><input type="text" name="n" id="hsn" value="" ></td>
+            </tr>
+            <tr>
+                <td>nhap k</td>
+                <td><input type="text" name="k" id="hsk" value="" ></td>
+            </tr>
+            <tr>
+                <td>ket qua</td>
+                <td ><input type="text" name="kq" value="" ></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Tinh" onclick="UCLN()"></td>
+            </tr>
+        </table>
+
+    </form>
+</body>
+
+</html>
